@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>While loop</title>
+</head>
+
+<body>
+<p>How many fingers am I holding up?</p>
+        
+        <p><input type="text" id="guess"> <button id="checkGuess">Guess!</button></p>
+        
+        <script type="text/javascript">
+            
+            document.getElementById("checkGuess").onclick = function() {
+                
+				var y = 1;
+               var x = false;
+				var z = document.getElementById("guess").value;
+                 while(x==false){
+					  var randomNumber = Math.random();
+                
+                randomNumber = randomNumber * 6;
+                
+                randomNumber = Math.floor(randomNumber);
+					 
+					 
+                if (z == randomNumber) {
+                   x=true;
+                    alert("Well done! You got it! your try is" + y );
+                    
+                } else {
+					y++;
+                    
+                    
+                }
+				 }
+                
+            }
+            
+            
+        </script>
+
+</body>
+</html>

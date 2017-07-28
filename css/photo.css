@@ -1,0 +1,32 @@
+@charset "utf-8";
+img{
+	width: 30%;
+	float: left;
+	padding: 1.66%;
+}
+
+h1{
+	font-family: 'Lobster', cursive;
+	padding-bottom: 3px;
+	border-bottom: 5px solid #f1f1f1;
+	width: 18%;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	color: gray;
+}
+
+p a{
+	text-decoration: none;
+	float: right;
+	color: gray;
+	font-weight: bold;
+}
+p a:hover{
+	color: black;
+	font-size: 105%;
+}

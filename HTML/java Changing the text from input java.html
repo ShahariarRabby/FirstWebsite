@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Changing the text from input</title>
+</head>
+
+<body>
+
+<input type="text" id="input">
+<button id="button">Change me</button>
+<p id="textchange">Show Input here: </p>
+
+
+
+<script>
+	
+	document.getElementById("button").onclick = function(){
+		//alert("all set");
+		var textin= "";
+		textin = document.getElementById("input").value;
+		document.getElementById("textchange").innerHTML = document.getElementById("textchange").innerHTML + textin;
+	}
+	
+	
+	
+	</script>
+
+</body>
+</html>

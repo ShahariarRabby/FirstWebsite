@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Magic word</title>
+</head>
+
+<body>
+
+<p>
+	Input the magic word
+</p>
+<input type="text" id="input">
+<button id="submit" >Submit</button>
+
+<script>
+	
+	document.getElementById("submit").onclick = function(){
+		var magicword = document.getElementById("input").value;
+		var magic = "abraka dabra";
+		if(magic == magicword){
+			alert("you did it");
+		}
+		
+		else{
+			alert("try again");
+		}
+	}
+	
+	
+	</script>
+
+</body>
+</html>

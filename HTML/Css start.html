@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>layer and object position
+	</title>
+	<style>
+	body{
+		background:  #d0d0d0;
+
+	}
+	.red{
+		color: red;
+		background-color: aquamarine;
+		width: 200px;
+		float: left;
+		margin: 10PX 10px 10px 20 px;
+
+
+	}
+
+	#yellow{
+		color: yellow;
+		background-color: red;
+		font-size: 200%;
+		font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+
+	}
+	#blue{
+		color: blue;
+	}
+
+	.red1{
+		color: yellowgreen;
+		background-color: beige;
+		font-size: 200%;
+		width: 200px;
+		float: right;
+	}
+	#lightblue{
+		color: lightblue;
+	}
+
+	.clr-float{
+		clear: both;
+	}
+
+
+	.relative1{
+		background: red;
+		width: 200px;
+		height: 200px;
+		font-size: 200%;
+		position: relative;
+		right: 75px;
+		top: 50px;
+		z-index: 2;
+		opacity: .9;
+	}
+
+	.relative2{
+		background: blue;
+		width: 200px;
+		height: 200px;
+		font-size: 200%;
+		position: relative;
+		left: 100px;
+		bottom: 100px;
+		z-index: 1;
+	}
+
+	.absolute1{
+
+		background: red;
+		width: 222px;
+		height: 220px;
+		font-size: 200%;
+		position: absolute;
+		left: 100px;
+
+
+	}
+
+	.absolute2{
+		background: blue;
+		width: 200px;
+		height: 200px;
+		font-size: 200%;
+		position: absolute;
+		right: 10px;
+	}
+
+	.fix{
+		background: yellow;
+		position: fixed;
+		width: 100px;
+		height: 100px;
+		bottom: 500px;
+		z-index: 10;
+		opacity: .5;
+
+
+	}
+
+
+
+	#square-red {
+
+		background-color:red;
+		border: 10px yellow solid;
+
+	}
+
+	#square-blue {
+
+		background-color:blue;
+		border-style: ridge solid dotted dashed;
+		border-color: green beige pink palegoldenrod;
+		border-width: 10px 5px 2px 1px;
+
+	}
+
+	#square-green {
+
+		background-color:green;
+		border-radius:50%;
+
+	}
+
+	.square {
+
+		width:400px;
+		height:400px;
+		margin:40px;
+		float:left;
+
+	}
+
+
+	</style>
+</head>
+
+<body>
+
+
+
+	<p style="color : blue; font-size: 200% " >
+		the quick browen fox jump over the leazy dog.
+	</p>
+
+	<div class="red">
+
+		<p> make some css</p>
+		<div id="yellow">
+			again make some css <span id="blue">with color blue</span>
+
+		</div>
+	</div>
+
+
+	<div class="red1">
+		<p>
+			again make some css <span id="lightblue">with color none</span>
+		</p>
+
+	</div>
+
+	<p>This has no flote thats why showin in midd</p>
+
+	<div class="clr-float">
+		<p>this is clearing the flote</p>
+	</div>
+
+
+
+	<div class="relative1">
+		<p>
+			this is relative position 1
+		</p>
+	</div>
+	<div class="relative2">
+		<p>
+			this is relative position 2
+		</p>
+	</div>
+
+	<div class="absolute1">
+		<p>
+			this is relative absolute  1
+		</p>
+	</div>
+	<div class="absolute2">
+		<p>
+			this is relative absolute 2
+		</p>
+	</div>
+
+	<div class="fix">
+		<p>fixes</p>
+	</div>
+
+
+	<div id="square-red" class="square"></div>
+
+	<div id="square-blue" class="square"></div>
+
+	<div id="square-green" class="square"></div>
+
+
+</body>
+</html>

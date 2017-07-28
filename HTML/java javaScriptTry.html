@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>testing JavaScript</title>
+</head>
+
+<body>
+<p> This is from html</p>
+<p id="firsttry" > This is from html</p>
+
+<p id="Text"> This is from html again</p>
+<button id="mybutton" >Change The text</button>
+	
+	
+	<p id="Text2"> how append some text</p>
+<button id="mybutton2" >Append text2</button>
+
+<p id="Text3">change color and font size</p>
+<button id="mybutton3" >Append text2</button>
+
+
+
+
+<script type="text/javascript" >
+	
+	document.getElementById("firsttry").innerHTML="this text is change with javaScript";
+	
+	document.getElementById("mybutton").onclick = function(){
+		alert("button clicked");
+		document.getElementById("Text").innerHTML="this text is change with javaScript";
+	}
+	
+	
+	document.getElementById("mybutton2").onclick = function(){
+		alert("button clicked");
+		document.getElementById("Text2").innerHTML="This is" + document.getElementById("Text2").innerHTML+" using javaScript2";
+	}
+	
+	
+	document.getElementById("mybutton3").onclick = function(){
+		alert("this will change the color and font size");
+		document.getElementById("Text3").style.color="red";
+		document.getElementById("Text3").style.fontSize="150%";
+	}
+	</script>
+</body>
+</html>

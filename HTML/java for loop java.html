@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>for loop</title>
+</head>
+
+<body>
+<div id = "tweetdiv"></div>
+
+<script>
+	var tweetstring = "";
+	
+	var tweet = ["hi" , "hello", "hm", "oh" ," ok "];
+	
+	var x = tweet.length;
+	
+	for(var i=0; i <x; i++){
+		alert(tweet[i]);
+		tweetstring = tweetstring + "<p>"+ tweet[i] + "</p>";
+		
+	}
+	document.getElementById("tweetdiv").innerHTML = tweetstring;
+	
+	
+	</script>
+</body>
+</html>
